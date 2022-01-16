@@ -1,0 +1,9 @@
+<p>
+  What outlet: {{ outlet }} <br />
+  Why: {{ id$ | async }}
+</p>
+<p>Current Count: {{ count$ | async }}</p>
+<button (click)="up()">UP</button>
+<button (click)="down()">DOWN</button>
+<br />
+<a [routerLink]="['']">List</a>

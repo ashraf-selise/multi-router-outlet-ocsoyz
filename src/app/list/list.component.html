@@ -1,0 +1,23 @@
+<p>
+  list works!
+</p>
+<ul>
+  <li><a [routerLink]="['detail']">Detail</a></li>
+  <li><a [routerLink]="[{outlets: {detail: ['detail', '1']}}]">show Detail in
+      Detail block</a></li>
+  <li><a [routerLink]="[{outlets: {popup: ['someUrl', '2']}}]">show Detail in popup block</a></li>
+  <li><a [routerLink]="[{outlets: {popup: null, detail:null}}]">Cancel</a></li>
+</ul>
+<hr />
+<div class="main">
+  <h2>MAIN</h2>
+  <router-outlet></router-outlet>
+</div>
+<div class="detail">
+  <h2>Detail</h2>
+  <router-outlet name="detail"></router-outlet>
+</div>
+<div class="detail">
+  <h2>POPUP</h2>
+  <router-outlet name="popup"></router-outlet>
+</div>

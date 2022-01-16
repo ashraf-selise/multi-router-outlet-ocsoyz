@@ -1,0 +1,15 @@
+.main {
+  float: left;
+  display: block;
+  width: 20%;
+  border: solid 1px red;
+  min-height: 500px;
+}
+
+.detail {
+  float: left;
+  display: block;
+  border: solid 1px blue;
+  width: 30%;
+  min-height: 500px;
+}
